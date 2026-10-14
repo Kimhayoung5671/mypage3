@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학생들의 반짝거리는 아이디어를 사랑합니다 | 초등교사 하영쌤</title>
+
+  <!-- 메신저/SNS 공유용 Open Graph (OG) 메타 태그 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="학생들의 반짝거리는 아이디어를 사랑합니다 | 초등교사 하영쌤">
+  <meta property="og:description" content="자유롭게 질문하고 창의적인 아이디어를 마음껏 펼치는 하영쌤의 반짝이는 교실 이야기입니다.">
+  <meta property="og:image" content="https://i.postimg.cc/N0VH005h/Chat-GPT-Image-2026nyeon-9wol-29il-ohu-08-39-56.png">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+  
+  <style>
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 50%, #fef3c7 100%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-bold text-lg text-slate-800 flex items-center gap-2.5">
+        <!-- 상단 헤더 로고 -->
+        <div class="w-9 h-9 rounded-full bg-amber-100 border-2 border-amber-300 overflow-hidden shadow-sm flex items-center justify-center flex-shrink-0">
+          <img 
+            src="https://i.postimg.cc/N0VH005h/Chat-GPT-Image-2026nyeon-9wol-29il-ohu-08-39-56.png" 
+            alt="하영쌤 캐릭터 로고" 
+            class="w-full h-full object-cover"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden w-full h-full items-center justify-center bg-amber-100 p-0.5">
+            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" fill="#FFFBEB"/>
+              <path d="M25 50C25 30 35 18 50 18C65 18 75 30 75 50C75 60 70 70 50 70C30 70 25 60 25 50Z" fill="#4A2E1B"/>
+              <circle cx="50" cy="45" r="18" fill="#FFF0E6"/>
+              <path d="M35 42C35 32 42 22 50 22C58 22 65 32 65 42C60 35 55 35 50 38C45 35 40 35 35 42Z" fill="#5C3D2E"/>
+              <path d="M42 43Q45 40 48 43" stroke="#371B0D" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <circle cx="56" cy="43" r="2" fill="#371B0D"/>
+              <ellipse cx="40" cy="47" rx="3" ry="1.5" fill="#FFB7B2"/>
+              <ellipse cx="60" cy="47" rx="3" ry="1.5" fill="#FFB7B2"/>
+              <path d="M47 48Q50 52 53 48" fill="#E11D48"/>
+              <circle cx="72" cy="22" r="6" fill="#FBBF24"/>
+            </svg>
+          </div>
+        </div>
+        <span>반짝이는 교실</span>
+      </a>
+      <nav class="flex gap-6 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-amber-500 transition-colors">소개</a>
+        <a href="#values" class="hover:text-amber-500 transition-colors">수업 철학</a>
+        <a href="#resources" class="hover:text-amber-500 transition-colors">수업 자료실</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero-gradient py-16 px-6 border-b border-slate-200/60">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      
+      <!-- 대표 하영쌤 캐릭터 로고 영역 -->
+      <div class="flex flex-col items-center justify-center mb-2">
+        <div class="relative group">
+          <!-- 후광 & 테두리 효과 -->
+          <div class="absolute -inset-2 bg-gradient-to-r from-amber-300 via-amber-200 to-emerald-300 rounded-full blur-md opacity-70 group-hover:opacity-90 transition duration-300"></div>
+          
+          <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full bg-amber-50 border-4 border-white shadow-xl overflow-hidden flex items-center justify-center">
+            <!-- 실제 이미지 파일 -->
+            <img 
+              id="heroLogoImg"
+              src="https://i.postimg.cc/N0VH005h/Chat-GPT-Image-2026nyeon-9wol-29il-ohu-08-39-56.png" 
+              alt="하영쌤 캐릭터 로고" 
+              class="logo-img w-full h-full object-cover transform group-hover:scale-105 transition duration-300"
+              onerror="handleImageError(this)"
+            />
+            <!-- 대체 일러스트 (이미지 미로드 시 표시) -->
+            <div id="heroFallbackSvg" class="hidden w-full h-full items-center justify-center p-1 bg-amber-50">
+              <svg class="w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="95" fill="#FFFBEB" stroke="#FDE68A" stroke-width="4"/>
+                <rect x="22" y="115" width="34" height="10" rx="2" fill="#60A5FA"/>
+                <rect x="20" y="125" width="38" height="10" rx="2" fill="#34D399"/>
+                <rect x="18" y="135" width="42" height="12" rx="2" fill="#F472B6"/>
+                <g transform="translate(138, 20)">
+                  <path d="M12 -2 L12 -6 M22 2 L25 -1 M26 12 L30 12 M22 22 L25 25 M2 -1 L5 2" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="12" cy="12" r="10" fill="#FBBF24"/>
+                  <rect x="9" y="21" width="6" height="4" fill="#9CA3AF" rx="1"/>
+                  <circle cx="9" cy="11" r="1.2" fill="#78350F"/>
+                  <circle cx="15" cy="11" r="1.2" fill="#78350F"/>
+                  <path d="M10 14Q12 16 14 14" stroke="#78350F" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                </g>
+                <path d="M38 42L40 47L45 47L41 50L42 55L38 52L34 55L35 50L31 47L36 47Z" fill="#FBBF24"/>
+                <path d="M165 78L166.5 82L170 82L167 84.5L168 88.5L165 86L162 88.5L163 84.5L160 82L163.5 82Z" fill="#FBBF24"/>
+                <path d="M28 85C28 83 29.5 81.5 31.5 81.5C33 81.5 34 82.5 34.5 83.5C35 82.5 36 81.5 37.5 81.5C39.5 81.5 41 83 41 85C41 87.5 34.5 91 34.5 91C34.5 91 28 87.5 28 85Z" fill="#F472B6"/>
+                <path d="M160 115C160 113 161.5 111.5 163.5 111.5C165 111.5 166 112.5 166.5 113.5C167 112.5 168 111.5 169.5 111.5C171.5 111.5 173 113 173 115C173 117.5 166.5 121 166.5 121C166.5 121 160 117.5 160 115Z" fill="#F472B6"/>
+                <path d="M48 95C42 55 65 24 100 24C135 24 158 55 152 95C148 120 156 140 156 140H44C44 140 52 120 48 95Z" fill="#4A2E1B"/>
+                <circle cx="100" cy="80" r="33" fill="#FFF0E6"/>
+                <path d="M67 76C67 55 82 38 100 38C118 38 133 55 133 76C133 78 125 58 112 58C100 58 95 68 90 68C85 68 80 58 67 76Z" fill="#5C3D2E"/>
+                <path d="M78 78Q83 73 88 78" stroke="#371B0D" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <circle cx="112" cy="77" r="4.5" fill="#371B0D"/>
+                <circle cx="113.5" cy="75.5" r="1.5" fill="#FFFFFF"/>
+                <ellipse cx="76" cy="84" rx="6" ry="3.5" fill="#FFB7B2"/>
+                <ellipse cx="120" cy="84" rx="6" ry="3.5" fill="#FFB7B2"/>
+                <path d="M91 84Q100 93 109 84" stroke="#E11D48" stroke-width="2.2" fill="#E11D48"/>
+                <ellipse cx="74" cy="90" rx="7" ry="4.5" fill="#FFF0E6" transform="rotate(-15 74 90)"/>
+                <ellipse cx="126" cy="90" rx="7" ry="4.5" fill="#FFF0E6" transform="rotate(15 126 90)"/>
+                <path d="M70 106C70 98 82 96 100 96C118 96 130 98 130 106V145H70V106Z" fill="#FFFBEB"/>
+                <path d="M92 96L100 114L108 96" stroke="#0284C7" stroke-width="2.5" fill="none"/>
+                <g transform="translate(0, 10)">
+                  <path d="M30 145C20 145 16 155 20 163C13 168 16 178 26 180C31 185 169 185 174 180C184 178 187 168 180 163C184 155 180 145 170 145C160 140 40 140 30 145Z" fill="#FFFFFF" stroke="#FDE68A" stroke-width="3"/>
+                  <text x="100" y="169" text-anchor="middle" font-family="'Pretendard', sans-serif" font-weight="900" font-size="23" fill="#F59E0B" letter-spacing="-0.5">하영<tspan fill="#EC4899">쌤</tspan></text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inline-flex items-center gap-2 bg-white/90 px-4 py-2 rounded-full shadow-sm text-amber-600 font-semibold text-sm">
+        <span>💡</span>
+        <span>초등교사 하영쌤</span>
+      </div>
+
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight tracking-tight">
+        "학생들의 반짝거리는 아이디어를 사랑합니다."
+      </h1>
+
+      <p class="text-lg md:text-xl text-slate-700 font-normal leading-relaxed max-w-2xl mx-auto pt-2">
+        학생들이 스스로 생각하고, 자유롭게 질문하며,<br class="hidden sm:inline">
+        창의적인 아이디어를 마음껏 펼칠 수 있는 수업을 좋아합니다.<br>
+        특히 학생들이 주도적으로 탐구하는 <span class="font-semibold text-amber-600 bg-amber-50 px-2 py-1 rounded">프로젝트 수업</span>을 가장 좋아합니다.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Class Core Values -->
+  <section id="values" class="py-16 px-6 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl font-bold text-slate-800">교실 속 3가지 가치</h2>
+        <p class="text-slate-500 mt-2 text-sm">배움이 즐거워지는 특별한 교실 이야기</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center card-hover">
+          <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-4">🚀</div>
+          <h3 class="font-bold text-slate-800 text-lg mb-2">학생 주도형</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">교사의 주도가 아닌 학생이 정답을 찾아가는 주도적인 프로젝트 수업을 지향합니다.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center card-hover">
+          <div class="w-14 h-14 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center text-2xl mb-4">💬</div>
+          <h3 class="font-bold text-slate-800 text-lg mb-2">자유로운 질문과 소통</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">틀릴 이유가 없는 안전한 공간에서 어떤 상상과 질문도 자유롭게 나눕니다.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center card-hover">
+          <div class="w-14 h-14 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mb-4">✨</div>
+          <h3 class="font-bold text-slate-800 text-lg mb-2">반짝이는 아이디어</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">아이들 저마다의 개성과 반짝이는 아이디어를 존중하고 발전시켜 나갑니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section id="resources" class="py-16 px-6 bg-slate-50 flex-1">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-2xl font-bold text-slate-800">수업 이야기 및 자료실</h2>
+        <p class="text-slate-500 mt-2 text-sm">인디스쿨과 블로그에서 교육 자료와 수업 기록을 공유하고 있습니다.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Indischool Card -->
+        <a href="https://indischool.com/@hayoungssam/posts" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 bg-emerald-50 text-emerald-600 text-xs font-semibold rounded-full border border-emerald-100">수업 커뮤니티</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-emerald-500 transition-colors"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 group-hover:text-emerald-600 transition-colors mb-3">인디스쿨 (Indischool)</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">프로젝트 수업 활동지, 학습 자료 및 교실에서 활용했던 다양한 반짝이는 아이디어 활동을 확인하실 수 있습니다.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs text-slate-400 flex items-center justify-between font-mono">
+            <span>indischool.com/@hayoungssam/posts</span>
+            <span class="text-emerald-600 font-sans font-medium">자료 보러가기 →</span>
+          </div>
+        </a>
+
+        <!-- Naver Blog Card -->
+        <a href="https://blog.naver.com/positive_hi/" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 bg-emerald-50 text-emerald-600 text-xs font-semibold rounded-full border border-emerald-100">교육 일지 & 성장 기록</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 group-hover:text-emerald-500 transition-colors"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-800 group-hover:text-emerald-600 transition-colors mb-3">네이버 블로그 (Naver Blog)</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">아이들과 함께 만들어가는 생생한 수업 이야기, 에세이 및 일상의 기록들을 자유롭게 공유하는 공간입니다.</p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs text-slate-400 flex items-center justify-between font-mono">
+            <span>blog.naver.com/positive_hi</span>
+            <span class="text-emerald-600 font-sans font-medium">블로그 방문하기 →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-8 px-6 text-center text-sm text-slate-400">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026. 모든 아이디어의 반짝임을 응원합니다.</p>
+      <div class="flex gap-4">
+        <a href="https://indischool.com/@hayoungssam/posts" target="_blank" class="hover:text-slate-600">인디스쿨</a>
+        <a href="https://blog.naver.com/positive_hi/" target="_blank" class="hover:text-slate-600">네이버 블로그</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 로고 오류 처리 스크립트 -->
+  <script>
+    function handleImageError(imgElem) {
+      imgElem.style.display = 'none';
+      const fallback = document.getElementById('heroFallbackSvg');
+      if (fallback) fallback.style.display = 'flex';
+    }
+  </script>
+
+</body>
+</html>

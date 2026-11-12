@@ -4,21 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>학생들의 반짝거리는 아이디어를 사랑합니다 | 초등교사 하영쌤</title>
-
-  <!-- 메신저/SNS 공유용 Open Graph (OG) 메타 태그 -->
+  
+  <!-- 메신저/SNS 링크 공유 시 미리보기 카드 설정 (Open Graph) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="학생들의 반짝거리는 아이디어를 사랑합니다 | 초등교사 하영쌤">
-  <meta property="og:description" content="자유롭게 질문하고 창의적인 아이디어를 마음껏 펼치는 하영쌤의 반짝이는 교실 이야기입니다.">
+  <meta property="og:description" content="학생들이 스스로 생각하고, 자유롭게 질문하며, 창의적인 아이디어를 마음껏 펼칠 수 있는 프로젝트 수업을 기록하는 공간입니다.">
   <meta property="og:image" content="https://i.postimg.cc/N0VH005h/Chat-GPT-Image-2026nyeon-9wol-29il-ohu-08-39-56.png">
-  
-  <!-- Tailwind CSS -->
+
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <!-- Pretendard Font -->
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
-  
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
       background-color: #f8fafc;
@@ -42,29 +41,7 @@
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
     <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
       <a href="#" class="font-bold text-lg text-slate-800 flex items-center gap-2.5">
-        <!-- 상단 헤더 로고 -->
-        <div class="w-9 h-9 rounded-full bg-amber-100 border-2 border-amber-300 overflow-hidden shadow-sm flex items-center justify-center flex-shrink-0">
-          <img 
-            src="https://i.postimg.cc/N0VH005h/Chat-GPT-Image-2026nyeon-9wol-29il-ohu-08-39-56.png" 
-            alt="하영쌤 캐릭터 로고" 
-            class="w-full h-full object-cover"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-          />
-          <div class="hidden w-full h-full items-center justify-center bg-amber-100 p-0.5">
-            <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="48" fill="#FFFBEB"/>
-              <path d="M25 50C25 30 35 18 50 18C65 18 75 30 75 50C75 60 70 70 50 70C30 70 25 60 25 50Z" fill="#4A2E1B"/>
-              <circle cx="50" cy="45" r="18" fill="#FFF0E6"/>
-              <path d="M35 42C35 32 42 22 50 22C58 22 65 32 65 42C60 35 55 35 50 38C45 35 40 35 35 42Z" fill="#5C3D2E"/>
-              <path d="M42 43Q45 40 48 43" stroke="#371B0D" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-              <circle cx="56" cy="43" r="2" fill="#371B0D"/>
-              <ellipse cx="40" cy="47" rx="3" ry="1.5" fill="#FFB7B2"/>
-              <ellipse cx="60" cy="47" rx="3" ry="1.5" fill="#FFB7B2"/>
-              <path d="M47 48Q50 52 53 48" fill="#E11D48"/>
-              <circle cx="72" cy="22" r="6" fill="#FBBF24"/>
-            </svg>
-          </div>
-        </div>
+        <img src="https://i.postimg.cc/N0VH005h/Chat-GPT-Image-2026nyeon-9wol-29il-ohu-08-39-56.png" alt="하영쌤 로고" class="w-9 h-9 rounded-full object-cover border border-amber-200 bg-amber-50">
         <span>반짝이는 교실</span>
       </a>
       <nav class="flex gap-6 text-sm font-medium text-slate-600">
@@ -79,60 +56,11 @@
   <section id="about" class="hero-gradient py-16 px-6 border-b border-slate-200/60">
     <div class="max-w-4xl mx-auto text-center space-y-6">
       
-      <!-- 대표 하영쌤 캐릭터 로고 영역 -->
+      <!-- 대표 로고 이미지 영역 -->
       <div class="flex flex-col items-center justify-center mb-2">
-        <div class="relative group">
-          <!-- 후광 & 테두리 효과 -->
-          <div class="absolute -inset-2 bg-gradient-to-r from-amber-300 via-amber-200 to-emerald-300 rounded-full blur-md opacity-70 group-hover:opacity-90 transition duration-300"></div>
-          
-          <div class="relative w-48 h-48 md:w-60 md:h-60 rounded-full bg-amber-50 border-4 border-white shadow-xl overflow-hidden flex items-center justify-center">
-            <!-- 실제 이미지 파일 -->
-            <img 
-              id="heroLogoImg"
-              src="https://i.postimg.cc/N0VH005h/Chat-GPT-Image-2026nyeon-9wol-29il-ohu-08-39-56.png" 
-              alt="하영쌤 캐릭터 로고" 
-              class="logo-img w-full h-full object-cover transform group-hover:scale-105 transition duration-300"
-              onerror="handleImageError(this)"
-            />
-            <!-- 대체 일러스트 (이미지 미로드 시 표시) -->
-            <div id="heroFallbackSvg" class="hidden w-full h-full items-center justify-center p-1 bg-amber-50">
-              <svg class="w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="100" r="95" fill="#FFFBEB" stroke="#FDE68A" stroke-width="4"/>
-                <rect x="22" y="115" width="34" height="10" rx="2" fill="#60A5FA"/>
-                <rect x="20" y="125" width="38" height="10" rx="2" fill="#34D399"/>
-                <rect x="18" y="135" width="42" height="12" rx="2" fill="#F472B6"/>
-                <g transform="translate(138, 20)">
-                  <path d="M12 -2 L12 -6 M22 2 L25 -1 M26 12 L30 12 M22 22 L25 25 M2 -1 L5 2" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
-                  <circle cx="12" cy="12" r="10" fill="#FBBF24"/>
-                  <rect x="9" y="21" width="6" height="4" fill="#9CA3AF" rx="1"/>
-                  <circle cx="9" cy="11" r="1.2" fill="#78350F"/>
-                  <circle cx="15" cy="11" r="1.2" fill="#78350F"/>
-                  <path d="M10 14Q12 16 14 14" stroke="#78350F" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-                </g>
-                <path d="M38 42L40 47L45 47L41 50L42 55L38 52L34 55L35 50L31 47L36 47Z" fill="#FBBF24"/>
-                <path d="M165 78L166.5 82L170 82L167 84.5L168 88.5L165 86L162 88.5L163 84.5L160 82L163.5 82Z" fill="#FBBF24"/>
-                <path d="M28 85C28 83 29.5 81.5 31.5 81.5C33 81.5 34 82.5 34.5 83.5C35 82.5 36 81.5 37.5 81.5C39.5 81.5 41 83 41 85C41 87.5 34.5 91 34.5 91C34.5 91 28 87.5 28 85Z" fill="#F472B6"/>
-                <path d="M160 115C160 113 161.5 111.5 163.5 111.5C165 111.5 166 112.5 166.5 113.5C167 112.5 168 111.5 169.5 111.5C171.5 111.5 173 113 173 115C173 117.5 166.5 121 166.5 121C166.5 121 160 117.5 160 115Z" fill="#F472B6"/>
-                <path d="M48 95C42 55 65 24 100 24C135 24 158 55 152 95C148 120 156 140 156 140H44C44 140 52 120 48 95Z" fill="#4A2E1B"/>
-                <circle cx="100" cy="80" r="33" fill="#FFF0E6"/>
-                <path d="M67 76C67 55 82 38 100 38C118 38 133 55 133 76C133 78 125 58 112 58C100 58 95 68 90 68C85 68 80 58 67 76Z" fill="#5C3D2E"/>
-                <path d="M78 78Q83 73 88 78" stroke="#371B0D" stroke-width="3" stroke-linecap="round" fill="none"/>
-                <circle cx="112" cy="77" r="4.5" fill="#371B0D"/>
-                <circle cx="113.5" cy="75.5" r="1.5" fill="#FFFFFF"/>
-                <ellipse cx="76" cy="84" rx="6" ry="3.5" fill="#FFB7B2"/>
-                <ellipse cx="120" cy="84" rx="6" ry="3.5" fill="#FFB7B2"/>
-                <path d="M91 84Q100 93 109 84" stroke="#E11D48" stroke-width="2.2" fill="#E11D48"/>
-                <ellipse cx="74" cy="90" rx="7" ry="4.5" fill="#FFF0E6" transform="rotate(-15 74 90)"/>
-                <ellipse cx="126" cy="90" rx="7" ry="4.5" fill="#FFF0E6" transform="rotate(15 126 90)"/>
-                <path d="M70 106C70 98 82 96 100 96C118 96 130 98 130 106V145H70V106Z" fill="#FFFBEB"/>
-                <path d="M92 96L100 114L108 96" stroke="#0284C7" stroke-width="2.5" fill="none"/>
-                <g transform="translate(0, 10)">
-                  <path d="M30 145C20 145 16 155 20 163C13 168 16 178 26 180C31 185 169 185 174 180C184 178 187 168 180 163C184 155 180 145 170 145C160 140 40 140 30 145Z" fill="#FFFFFF" stroke="#FDE68A" stroke-width="3"/>
-                  <text x="100" y="169" text-anchor="middle" font-family="'Pretendard', sans-serif" font-weight="900" font-size="23" fill="#F59E0B" letter-spacing="-0.5">하영<tspan fill="#EC4899">쌤</tspan></text>
-                </g>
-              </svg>
-            </div>
-          </div>
+        <div class="relative">
+          <div class="absolute -inset-1 bg-gradient-to-r from-amber-300 to-emerald-300 rounded-full blur opacity-40"></div>
+          <img src="https://i.postimg.cc/N0VH005h/Chat-GPT-Image-2026nyeon-9wol-29il-ohu-08-39-56.png" alt="하영쌤 캐릭터 로고" class="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover shadow-lg border-4 border-white bg-amber-50">
         </div>
       </div>
 
@@ -163,19 +91,19 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center card-hover">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center">
           <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-4">🚀</div>
           <h3 class="font-bold text-slate-800 text-lg mb-2">학생 주도형</h3>
           <p class="text-sm text-slate-600 leading-relaxed">교사의 주도가 아닌 학생이 정답을 찾아가는 주도적인 프로젝트 수업을 지향합니다.</p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center card-hover">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center">
           <div class="w-14 h-14 rounded-full bg-sky-100 text-sky-600 flex items-center justify-center text-2xl mb-4">💬</div>
           <h3 class="font-bold text-slate-800 text-lg mb-2">자유로운 질문과 소통</h3>
           <p class="text-sm text-slate-600 leading-relaxed">틀릴 이유가 없는 안전한 공간에서 어떤 상상과 질문도 자유롭게 나눕니다.</p>
         </div>
 
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center card-hover">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center">
           <div class="w-14 h-14 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mb-4">✨</div>
           <h3 class="font-bold text-slate-800 text-lg mb-2">반짝이는 아이디어</h3>
           <p class="text-sm text-slate-600 leading-relaxed">아이들 저마다의 개성과 반짝이는 아이디어를 존중하고 발전시켜 나갑니다.</p>
@@ -193,7 +121,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <!-- Indischool Card -->
         <a href="https://indischool.com/@hayoungssam/posts" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -209,7 +136,6 @@
           </div>
         </a>
 
-        <!-- Naver Blog Card -->
         <a href="https://blog.naver.com/positive_hi/" target="_blank" rel="noopener noreferrer" class="group bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm card-hover flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -233,19 +159,196 @@
     <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <p>© 2026. 모든 아이디어의 반짝임을 응원합니다.</p>
       <div class="flex gap-4">
-        <a href="https://indischool.com/@hayoungssam/posts" target="_blank" class="hover:text-slate-600">인디스쿨</a>
-        <a href="https://blog.naver.com/positive_hi/" target="_blank" class="hover:text-slate-600">네이버 블로그</a>
+        <a href="https://indischool.com/@hayoungssam/posts" target="_blank" rel="noopener noreferrer" class="hover:text-slate-600">인디스쿨</a>
+        <a href="https://blog.naver.com/positive_hi/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-600">네이버 블로그</a>
       </div>
     </div>
   </footer>
 
-  <!-- 로고 오류 처리 스크립트 -->
+  <!-- Guestbook Section -->
+  <section id="guestbook" class="py-16 px-6 bg-slate-50 border-t border-slate-200/80">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-1.5 bg-amber-50 text-amber-600 px-3 py-1 rounded-full text-xs font-semibold border border-amber-100 mb-3">
+          <span>✍️</span>
+          <span>반짝이는 소통 공간</span>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-800">하영쌤 방명록</h2>
+        <p class="text-slate-500 mt-2 text-sm">따뜻한 응원의 한마디나 반짝이는 수업 이야기를 자유롭게 남겨주세요.</p>
+      </div>
+
+      <!-- 방명록 작성 폼 카드 -->
+      <div class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200/80 shadow-sm mb-10">
+        <form id="guestbookForm" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="sm:col-span-1">
+              <label for="guestName" class="block text-xs font-semibold text-slate-600 mb-1.5">이름</label>
+              <input
+                type="text"
+                id="guestName"
+                name="name"
+                required
+                maxlength="20"
+                placeholder="예: 3학년 반짝이 / 김선생님"
+                class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-amber-400 focus:ring-2 focus:ring-amber-100 transition-all"
+              >
+            </div>
+            <div class="sm:col-span-2">
+              <label for="guestMessage" class="block text-xs font-semibold text-slate-600 mb-1.5">메시지</label>
+              <input
+                type="text"
+                id="guestMessage"
+                name="message"
+                required
+                maxlength="200"
+                placeholder="남기고 싶은 이야기를 적어주세요."
+                class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:bg-white focus:border-amber-400 focus:ring-2 focus:ring-amber-100 transition-all"
+              >
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-2">
+            <span id="guestbookStatus" class="text-xs text-slate-500"></span>
+            <button
+              type="submit"
+              id="guestSubmitBtn"
+              class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 active:bg-amber-700 text-white font-semibold text-sm shadow-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <span>방명록 남기기</span>
+              <i class="fa-solid fa-paper-plane text-xs"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 방명록 목록 영역 -->
+      <div>
+        <div class="flex items-center justify-between mb-4 px-1">
+          <h3 class="text-sm font-bold text-slate-700 flex items-center gap-2">
+            <span>남겨진 이야기</span>
+            <span id="guestbookCount" class="px-2 py-0.5 text-xs font-semibold bg-amber-100 text-amber-700 rounded-full">0</span>
+          </h3>
+          <button
+            type="button"
+            onclick="fetchGuestbook()"
+            class="text-xs text-slate-500 hover:text-amber-600 flex items-center gap-1 transition-colors"
+          >
+            <i class="fa-solid fa-rotate-right"></i>
+            <span>새로고침</span>
+          </button>
+        </div>
+
+        <div id="guestbookList" class="space-y-4">
+          <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm text-center text-sm text-slate-400">
+            방명록을 불러오는 중입니다...
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script>
-    function handleImageError(imgElem) {
-      imgElem.style.display = 'none';
-      const fallback = document.getElementById('heroFallbackSvg');
-      if (fallback) fallback.style.display = 'flex';
+    const GUESTBOOK_API_URL = 'https://script.google.com/macros/s/AKfycbxFvXi53Jo86dXH9UXd11HMWGUpI75Umhzof0ecBK7EYv7290i9X5Pgy4sBBCA2czFO/exec';
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
     }
+
+    async function fetchGuestbook() {
+      const listEl = document.getElementById('guestbookList');
+      const countEl = document.getElementById('guestbookCount');
+
+      try {
+        const response = await fetch(GUESTBOOK_API_URL);
+        const result = await response.json();
+
+        if (result.status === 'success' && Array.isArray(result.data)) {
+          const entries = result.data;
+          countEl.textContent = entries.length;
+
+          if (entries.length === 0) {
+            listEl.innerHTML = `
+              <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm text-center text-sm text-slate-400">
+                아직 작성된 방명록이 없습니다. 첫 번째 이야기를 남겨주세요! ✨
+              </div>
+            `;
+            return;
+          }
+
+          listEl.innerHTML = entries.map(item => `
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm transition-all hover:border-amber-200">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <div class="flex items-center gap-2">
+                  <span class="w-7 h-7 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center text-xs font-bold">
+                    ${escapeHtml((item.name || '익명').charAt(0))}
+                  </span>
+                  <span class="font-bold text-slate-800 text-sm">${escapeHtml(item.name || '익명')}</span>
+                </div>
+                <span class="text-xs text-slate-400 font-mono">${escapeHtml(item.timestamp || '')}</span>
+              </div>
+              <p class="text-slate-600 text-sm leading-relaxed pl-9 whitespace-pre-line">${escapeHtml(item.message || '')}</p>
+            </div>
+          `).join('');
+        } else {
+          throw new Error(result.message || '데이터를 불러오지 못했습니다.');
+        }
+      } catch (err) {
+        listEl.innerHTML = `
+          <div class="bg-white rounded-2xl p-8 border border-slate-200/80 shadow-sm text-center text-sm text-rose-500">
+            방명록을 불러오는 중 오류가 발생했습니다. 잠시 후 새로고침을 눌러주세요.
+          </div>
+        `;
+      }
+    }
+
+    document.getElementById('guestbookForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('guestName');
+      const messageInput = document.getElementById('guestMessage');
+      const submitBtn = document.getElementById('guestSubmitBtn');
+      const statusEl = document.getElementById('guestbookStatus');
+
+      const name = nameInput.value.trim();
+      const message = messageInput.value.trim();
+
+      if (!name || !message) return;
+
+      submitBtn.disabled = true;
+      statusEl.textContent = '소중한 이야기를 저장하고 있습니다...';
+      statusEl.className = 'text-xs text-amber-600 font-medium';
+
+      try {
+        // 커스텀 헤더 없이 호출하여 브라우저 CORS 프리플라이트(OPTIONS) 요청 방지
+        const response = await fetch(GUESTBOOK_API_URL, {
+          method: 'POST',
+          body: JSON.stringify({ name, message })
+        });
+        const result = await response.json();
+
+        if (result.status === 'success') {
+          nameInput.value = '';
+          messageInput.value = '';
+          statusEl.textContent = '방명록이 등록되었습니다! 감사합니다 💡';
+          statusEl.className = 'text-xs text-emerald-600 font-medium';
+          await fetchGuestbook();
+        } else {
+          throw new Error(result.message || '등록 실패');
+        }
+      } catch (err) {
+        statusEl.textContent = '등록 중 오류가 발생했습니다. 다시 시도해 주세요.';
+        statusEl.className = 'text-xs text-rose-500 font-medium';
+      } finally {
+        submitBtn.disabled = false;
+        setTimeout(() => {
+          statusEl.textContent = '';
+        }, 4000);
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', fetchGuestbook);
   </script>
 
 </body>
